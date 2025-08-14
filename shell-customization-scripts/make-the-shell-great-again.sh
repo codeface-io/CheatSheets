@@ -81,3 +81,20 @@ gitty () {
 
     echo "🤪 https://www.urbandictionary.com/define.php?term=gitty"
 }
+
+# Unveil: Turns all PDFs in the current folder into Markdown files, using markitdown (https://github.com/microsoft/markitdown). Super useful for working with AI on local context.
+unveil() {
+    if ! command -v markitdown &> /dev/null; then
+        echo "markitdown not found (yet)."
+        echo "markitdown (by Microsoft) helps making all kinds of content readable to AI."
+        echo "Install it with: 'pip install markitdown'"
+        echo "Or visit: https://github.com/microsoft/markitdown"
+        return 1
+    fi
+    
+    for pdf in *.pdf; do
+        base="${pdf%.pdf}"
+        PYTHONWARNINGS=ignore markitdown "$pdf" -o "$base.md" > /dev/null
+        echo "✨ $base.md"
+    done
+}
