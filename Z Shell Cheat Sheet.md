@@ -83,22 +83,7 @@
 
 ### Specific Customizations
 
-* To pimp the shell, adapt [these example scripts](shell-customization-scripts/) and "install" them:
-
-  1. Add something like this to ~/.zshrc (Z-Shell Run Control):
-  
-  ```shell
-  # load shell customization
-  scriptsFolder="/Users/seb/Desktop/GitHub Repos/CheatSheets/shell-customization-scripts"
-  source "$scriptsFolder/make-the-shell-great-again.sh"
-  source "$scriptsFolder/personalize-the-shell.sh"
-  ```
-  
-  2. Load the change immediately by opening a new terminal window/tab or by "re-sourcing" the file:
-  
-  ```shell
-  source ~/.zshrc
-  ```
+* The [Mac Stack repo](https://github.com/codeface-io/mac-stack) demonstrates how to pimp the Z Shell.
   
 * To open an in Finder selected folder in a new Terminal or iTerm2 tab via a shortcut:
 
@@ -120,7 +105,7 @@
         
         2. Under "General" / "Basics" / "Title" make sure only "Session Name" is selected
         
-        3. Use the example scripts documented above or manually add this to ~/.zshrc:
+        3. Use the example scripts linked above or manually add this to ~/.zshrc:
             ```bash
             DISABLE_AUTO_TITLE="true"
             
