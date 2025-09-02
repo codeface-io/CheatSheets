@@ -117,11 +117,9 @@ Some common GitHub workflows rely on features that are **not** part of git but o
 
 ### Shell Commands
 
-Have a look at [this shell customization script](shell-customization-scripts/make-the-shell-great-again.sh). It offers some conveniences for git. 
+Have a look at the shell customization scripts in [Mac Stack](https://github.com/codeface-io/mac-stack). They offer some conveniences for git.
 
-You could "install" such a script file by loading it in ~/.zshrc via `source /path/to/my/shell-customization-script`.
-
-The script offers two major conveniences:
+The scripts offer two major conveniences:
 
 1. A function to add, commit and push all unstaged changes like so:
 
