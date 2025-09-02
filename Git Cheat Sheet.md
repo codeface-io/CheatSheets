@@ -137,5 +137,6 @@ The script offers two major conveniences:
 
 ## Free Clients
 
+* [Fork](https://git-fork.com)
 * [Sourcetree](https://www.sourcetreeapp.com)
 * [GitKraken](https://www.gitkraken.com)
