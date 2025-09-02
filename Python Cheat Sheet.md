@@ -118,7 +118,7 @@ sudo rm -rf /usr/local/bin/easy_install*
 # Add Homebrew to shell (append to ~/.zshrc)
 text_to_append='
 
-# setup homebrew
+# Setup Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"'
 
 echo "$text_to_append" >> ~/.zshrc
@@ -136,12 +136,10 @@ brew install pyenv
 # Add pyenv to shell (append to ~/.zshrc)
 text_to_append='
 
-# setup pyenv
+# Setup pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"'
+eval "$(pyenv init -)"'
 
 echo "$text_to_append" >> ~/.zshrc
 
