@@ -109,31 +109,15 @@ Some common GitHub workflows rely on features that are **not** part of git but o
 
 ## Setup
 
-### Shell Authentication
+Have a look at the shell customizations and other git setup codified in [Mac Stack](https://github.com/nohype-ai/MacStack).
 
-* GitHub and most other git hosts do not support password authentication anymore, so on the command line you'll authenticate either via a PAT or via an SSH key.
+* The scripts offer two major conveniences:
+  1. A function to add, commit and push all unstaged changes like so: `gitty "Fix UI bug"`
+  2. Aliases that allow omitting `git` with all git commands
 
-* When using a PAT: To cache/remember the PAT (password), run `git config --global credential.helper osxkeychain`. This way you don't need to enter the PAT everytime git needs to authenticate.
+* Font: To see nice code-oriented ligatures, use the [Fira Code font](https://fonts.google.com/specimen/Fira+Code).
 
-### Shell Commands
-
-Have a look at the shell customization scripts in [Mac Stack](https://github.com/codeface-io/mac-stack). They offer some conveniences for git.
-
-The scripts offer two major conveniences:
-
-1. A function to add, commit and push all unstaged changes like so:
-
-    ```bash
-    gitty "Fix UI bug"
-    ```
-
-2. Aliases that allow omitting "``git ``" with all git commands
-
-### Font
-
-* To have nice code-oriented ligatures, use the [Fira Code font](https://fonts.google.com/specimen/Fira+Code) and (in iTerm) activate ligatures.
-
-## Free Clients
+## Free Graphical Clients
 
 * [Fork](https://git-fork.com)
 * [Sourcetree](https://www.sourcetreeapp.com)

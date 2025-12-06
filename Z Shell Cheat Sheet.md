@@ -83,37 +83,7 @@
 
 ### Specific Customizations
 
-* The [Mac Stack repo](https://github.com/codeface-io/mac-stack) demonstrates how to pimp the Z Shell.
-  
-* To open an in Finder selected folder in a new Terminal or iTerm2 tab via a shortcut:
-
-  1. Go to System Settings / Keyboard / Keyboard Shortcuts... / Services / Files and Folders
-  2. Find the shortcut you want:
-      * "New Terminal Tab at Folder" for Terminal
-      * "New iTerm2 Tab Here" for iTerm2
-  3. Double click on the key command (or on "none" if there is none)
-  4. Press Ctrl+T (Shift+Cmd+T for example didn't work since it's used by Finder)
-
-* Clearly see which working directories are opened in the tabs:
-
-    * Terminal:
-        1. Go to Settings / Profiles / The profile you use / Tab
-        2. Under "Title" deselect everything except for "Working directory of document"
-        
-    * iTerm2 (from [this comment](https://gist.github.com/phette23/5270658?permalink_comment_id=3020766#gistcomment-3020766)):
-        1. Go to Settings / Profiles / The profile you use
-        
-        2. Under "General" / "Basics" / "Title" make sure only "Session Name" is selected
-        
-        3. Use the example scripts linked above or manually add this to ~/.zshrc:
-            ```bash
-            DISABLE_AUTO_TITLE="true"
-            
-            precmd() {
-              # sets the tab title to current dir
-              echo -ne "\e]1;${PWD##*/}\a"
-            }
-            ```
+* The [Mac Stack repo](https://github.com/nohype-ai/MacStack) demonstrates how to pimp the Z Shell.
 
 * Avoid error "Operation not permitted" (for example with command "find") by giving Terminal/iTerm2 full disk access:
 

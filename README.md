@@ -1,4 +1,5 @@
 # Mac Dev Cheat Sheets
+
 ## Apple
 
 * [Mac](Mac%20Cheat%20Sheet.md)
@@ -12,7 +13,6 @@
 * [Git](Git%20Cheat%20Sheet.md)
 * [Z Shell](Z%20Shell%20Cheat%20Sheet.md)
 * [Python](Python%20Cheat%20Sheet.md)
-* [Claude Code](Claude%20Code%20Cheat%20Sheet.md)
 * [Security](Security%20Cheat%20Sheet.md)
 * [Flutter](Flutter%20Cheat%20Sheet.md)
 
